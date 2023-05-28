@@ -1,0 +1,45 @@
+body {
+    font-family: monospace;
+}
+
+h1 {
+    margin-top: 2em;
+    text-align: center;
+    border-bottom: solid black 10px;
+}
+
+#main {
+    padding: 50px;
+}
+
+legend {
+    text-transform: uppercase;
+}
+
+label {
+    font-weight: bold;
+    display: inline-block;
+    width: 250px;
+}
+
+input[type="checkbox"] {
+    vertical-align: middle;
+}
+
+#connaissance {
+    color: red;
+    background-color: #c0c0ff;
+}
+
+footer {
+    margin-top: 2em;
+    text-align: center;
+    border-top: solid blue 5px;
+    border-bottom: solid blue 5px;
+    font-size: x-small;
+}
+
+input {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
