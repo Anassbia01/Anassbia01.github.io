@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Formulaire</title>
+   <link rel="stylesheet" type="text/css" media="screen" href="j.css"/>
+</head>
+<body>
+   <h1>MON PREMIER FORMULAIRE HTML 5</h1>
+   <form action="destination.html">
+      <fieldset id="main">
+         <legend>Vos données personnelles</legend>
+         <label for="nom">Nom :</label>
+         <input type="text" id="nom" name="nom" placeholder="Entrez votre nom"><br>
+         <label for="prenom">Prénom :</label>
+         <input type="text" id="prenom" name="prenom" placeholder="Entrez votre prénom"><br>
+         <label for="date">Date :</label>
+         <input type="text" id="date" name="date" placeholder="Entrez la date"><br>
+         <fieldset>
+            <legend>Lieu de naissance</legend>
+            <input type="radio" id="lieu_naissance_oujda" name="lieu_naissance" value="oujda">
+            <label for="lieu_naissance_oujda">Oujda</label>
+            <input type="radio" id="lieu_naissance_reste_monde" name="lieu_naissance" value="reste_monde">
+            <label for="lieu_naissance_reste_monde">Reste du monde</label><br>
+         </fieldset>
+         <div>
+            <label for="adresse_postale">Adresse postale :</label>
+            <textarea name="adresse_postale" id="adresse_postale" cols="30" rows="2" placeholder="Entrez votre adresse"></textarea>
+         </div>
+         <label for="code_postal">Code postal :</label>
+         <input type="number" id="code_postal" name="code_postal"  placeholder="Entrez votre code postal"><br>
+         <label for="email">Adresse électronique :</label>
+         <input type="email" id="email" name="email" placeholder="Entrez votre adresse électronique"><br>
+         <label for="page_personnelle">Page personnelle :</label>
+         <input type="url" id="page_personnelle" name="page_personnelle" placeholder="Entrez votre page personnelle"><br>
+         <label for="telephone">Téléphone portable :</label>
+         <input type="tel" id="telephone" name="telephone" ><br>
+         <div>
+            <label for="semestre">Semestre :</label>
+            <select id="semestre" name="semestre">
+               <option value="S1">S1</option>
+               <option value="S2" selected>S2</option>
+               <option value="S3">S3</option>
+               <option value="S4">S4</option>
+            </select>
+         </div>
+         <div>
+            <label for="niveauHTML">Niveau en HTML :</label>
+            <input type="range" id="niveauHTML" name="niveauHTML" min="0" max="10" step="1" value="0">
+         </div>
+         <fieldset id="connaissance">
+            <legend id="con">Connaissances</legend>
+            <input type="checkbox" id="connaissances1" name="connaissances" value="1" checked>
+            <label for="connaissances1">HTML</label>
+            <input type="checkbox" id="connaissances2" name="connaissances" value="1">
+            <label for="connaissances2">CSS</label>
+            <input type="checkbox" id="connaissances3" name="connaissances" value="1">
+            <label for="connaissances3">Formulaire</label>
+            <input type="checkbox" id="connaissances4" name="connaissances" value="1">
+            <label for="connaissances4">JavaScript</label>
+         </fieldset>
+         <button type="submit">Envoyer</button>
+         <button type="reset">Réinitialiser</button>
+      </fieldset>
+   </form>
+   <footer>Formulaire réalisé dans le cadre du TP 2 du cours</footer>
+</body>
+</html>
